@@ -3,7 +3,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 .fdo {
-	background-image: url(/img/fondo1.jpg);
+	background-image: url(/img/bg-login.jpg);
 	height: 100vh;
 	background-position: top center;
 	background-size: cover;
