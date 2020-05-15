@@ -13,8 +13,19 @@ body {
 }
 
 h1 {
-	font-family: 'Merriweather', serif;
+  	font-family: Merriweather;
+	font-size: 4rem;
 	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.13;
+	letter-spacing: normal;
+	text-align: left;
+	color: white;
+	margin: auto;
+	padding: 25px 15px 25px 15px;
+	border-top: 1.5px solid white;
+	border-bottom: 1.5px solid white;
 }
 
 h1 > strong {
@@ -24,42 +35,59 @@ h1 > strong {
 h3 {
 	font-weight: 300;
 	font-size: 1rem;
+	padding: 15px 10px;
+}
+
+h3 > strong {
+	font-weight: 600;
 }
 
 .logo{
-	width: 250px;
-	height: auto;
-	color: white;
-	margin: auto;
-	padding: 50px;
+	color: #006ECC;
+	text-align: left;
+	width: auto;
+	margin: 5px;
+}
+
+.logo > img{
+	width: 150px;
 }
 
 .logo > p{
 	font-weight: 600;
-	font-size: .8rem;
-	letter-spacing: 1px;
-	line-height: 1.2;
+	font-size: .9rem;
 }
 
 
 .caja_blanca {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	flex-direction: column;
 	background-color: white;
 	border-radius: 8px;
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	height: 400px;
 	width: 400px;
-	margin-right: 80px;
+	margin-right: 100px;
+	margin-left: 50px;
+	line-height: normal;
+}
+
+.caja_blanca_top{
+	display: flex;
+	padding-top: 15px;
+}
+
+.caja_blanca_top > img{
+	height: 200px;
 }
 
 .caja_celeste {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	background-color: #e5f2ff;
+	background-color: #BBDFFD;
 	height: 175px;
 	width: 400px;
 	margin: auto 0 0 0;
@@ -71,27 +99,22 @@ h3 {
 	align-items: center;
 }
 
-.google-button {
-	height: 40px;
-	border-width: 0;
-	background: white;
-	color: #aaaaaa;
-	border-radius: 5px;
-	white-space: nowrap;
-	box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
-	transition-property: background-color, box-shadow;
+.btn {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	background-color: transparent;
+	color: #006ECC;
+	border-radius: 35px;
+	height: 42px;
+	width: 200px;
+  	border: solid 1.5px  #006ECC;
+	transition-property: background-color;
 	transition-duration: 150ms;
 	transition-timing-function: ease-in-out;
-	font-family: 'Roboto', sans-serif;
-	font-weight: medium;
-	font-size: 14px;
 }
 
-.google-button__icon {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 8px 8px 8px 8px;
-	width: 18px;
-	height: 18px;
-	box-sizing: border-box;
-}
+.btn:hover {
+	background-color: #006ECC;
+	color: white;
+  }
